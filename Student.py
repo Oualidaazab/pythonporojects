@@ -1,52 +1,132 @@
-print("hello ...............................................................") 
-Gradbook={}
-studentname=str(input("enter le nom de eleve  : ")) 
-controlnumber=int(input("enter combien des controle : ")) 
-i =0 
-notes=[]
-while i<controlnumber :
-     i+=1 
-     note=int(input(f"enter le note {i} :"))  
-     notes.append(note) 
-Gradbook[studentname] =notes 
-print(Gradbook) 
-def listeleve(n) : 
-     if n not in  Gradbook.keys() : 
-          print(f"this student {n} not in databases please try again !!")
-     for  item  in Gradbook.keys():
-          if item == n: 
-               print(f"l'evel et deja dans la list : ") 
-    
-def delelteleve(x) :  
-     if x in Gradbook : 
-          del Gradbook[x]  
-          print(f'leleve {x} a etait suprime ')  
-     elif x  not in Gradbook :  
-          print(f"l'eleve ne pad dans la list :")  
-def  moyen(s) : 
-     v=Gradbook.get(s) 
-     moyen = sum(v)/controlnumber  
-     print(f"le moyen de eleve {s} est : {moyen } /20 ")
+print("Hello ...............................................................")
 
-userinput=int(input("Menu .......................................................... \n 1 : chercher un eleve enter  : \n 2 :suprime une eleve \n 3 :pour avoir le moyen :\n enter votre choix ")) 
-if userinput == 1  : 
-     nameuser=str(input("Entre le nom de elve  : ")) 
-     listeleve(nameuser)    
-elif userinput  ==  2 : 
-     nameuser2=str(input("Entre le nom de eleve : ")) 
-     delelteleve(nameuser2)   
-elif userinput == 3 : 
-     nameuser3 =str(input("Entre le nome de eleve  : "))
-     moyen(nameuser3) 
- 
-    
-     
-     
+Gradebook = {}
 
-     
+student_name = input("Entrez le nom de l'élève : ")
 
 
+control_number = int(input("Entrez le nombre de contrôles : "))
 
 
+i = 0
+notes = []
+while i < control_number:
+    i += 1
+    note = int(input(f"Entrez la note {i} : "))
+    notes.append(note)
 
+# Store student and their notes
+Gradebook[student_name] = notes
+print(Gradebook)
 
+# Function to search for a student
+def list_eleve(name):
+    if name not in Gradebook:
+        print(f"L'élève {name} n'est pas dans la base de données. Veuillez réessayer !!")
+    else:
+        print(f"L'élève {name} est déjà dans la liste.")
+
+# Function to delete a student
+def delete_eleve(name):
+    if name in Gradebook:
+        del Gradebook[name]
+        print(f"L'élève {name} a été supprimé.")
+    else:
+        print(f"L'élève {name} n'est pas dans la liste.")
+
+# Function to calculate average
+def moyenne(name):
+    if name in Gradebook:
+        notes = Gradebook.get(name)
+        avg = sum(notes) / len(notes)
+        print(f"La moyenne de l'élève {name} est : {avg:.2f} / 20")
+    else:
+        print(f"L'élève {name} n'est pas dans la base de données.")
+
+# Menu
+user_input = int(input(
+    "\nMenu ..........................................................\n"
+    "1 : Chercher un élève\n"
+    "2 : Supprimer un élève\n"
+    "3 : Calculer la moyenne\n"
+    "Entrez votre choix : "
+))
+
+if user_input == 1:
+    name_input = input("Entrez le nom de l'élève : ")
+    list_eleve(name_input)
+elif user_input == 2:
+    name_input = input("Entrez le nom de l'élève : ")
+    delete_eleve(name_input)
+elif user_input == 3:
+    name_input = input("Entrez le nom de l'élève : ")
+    moyenne(name_input)
+else:
+    print("Choix invalide.")
+print("Hello ...............................................................")
+
+# Initialize an empty grade book
+Gradebook = {}
+
+# Get student name
+student_name = input("Entrez le nom de l'élève : ")
+
+# Get number of controls
+control_number = int(input("Entrez le nombre de contrôles : "))
+
+# Collect grades
+i = 0
+notes = []
+while i < control_number:
+    i += 1
+    note = int(input(f"Entrez la note {i} : "))
+    notes.append(note)
+
+# Store student and their notes
+Gradebook[student_name] = notes
+print(Gradebook)
+
+# Function to search for a student
+def list_eleve(name):
+    if name not in Gradebook:
+        print(f"L'élève {name} n'est pas dans la base de données. Veuillez réessayer !!")
+    else:
+        print(f"L'élève {name} est déjà dans la liste.")
+
+# Function to delete a student
+def delete_eleve(name):
+    if name in Gradebook:
+        del Gradebook[name]
+        print(f"L'élève {name} a été supprimé.")
+    else:
+        print(f"L'élève {name} n'est pas dans la liste.")
+
+# Function to calculate average
+def moyenne(name):
+    if name in Gradebook:
+        notes = Gradebook.get(name)
+        avg = sum(notes) / len(notes)
+        print(f"La moyenne de l'élève {name} est : {avg:.2f} / 20")
+    else:
+        print(f"L'élève {name} n'est pas dans la base de données.")
+
+# Menu
+user_input = int(input(
+    "\nMenu ..........................................................\n"
+    "1 : Chercher un élève\n"
+    "2 : Supprimer un élève\n"
+    "3 : Calculer la moyenne\n"
+    "Entrez votre choix : "
+))
+
+if user_input == 1:
+    name_input = input("Entrez le nom de l'élève : ")
+    list_eleve(name_input)
+elif user_input == 2:
+    name_input = input("Entrez le nom de l'élève : ")
+    delete_eleve(name_input)
+elif user_input == 3:
+    name_input = input("Entrez le nom de l'élève : ")
+    moyenne(name_input)
+else:
+    print("Choix invalide.")
