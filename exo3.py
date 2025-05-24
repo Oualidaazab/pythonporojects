@@ -1,4 +1,4 @@
-class CompteBancaire:
+class BankAcount:
     def __init__(self,titulaire,solde = 0):
         self.__titulaire = titulaire
         self.__solde = solde
@@ -19,7 +19,7 @@ class CompteBancaire:
         return f'Titulaire : {self.__titulaire}\nSolde : {self.__solde}'
 
 
-comptes = [CompteBancaire('Mr Alami'),CompteBancaire('Mme Rachidi',3000)]
+comptes = [BankAcount('Mr Alami'),BankAcount'Mme Rachidi',3000)]
 
 for cp in comptes:
     cp.deposer(1000)
