@@ -1,4 +1,4 @@
-class Personne:
+class Personne:                                 # this project use opp inheritance 
     def __init__(self,nom,age):
         self.nom = nom
         self.age =age
