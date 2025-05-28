@@ -1,3 +1,16 @@
+#---------------------------------------------------------------------------- 
+# Exercice 6
+#Objectif : Comprendre l’héritage multi-niveaux.
+#Consignes :
+#. Créer une classe Vehicule avec :
+# marque (str)
+#. Créer une classe Voiture héritant de Vehicule, avec :
+# nb_portes (int)
+#. Créer une classe VoitureElectrique héritant de Voiture, avec :
+# autonomie (int, en km)
+#4. Ajouter une méthode infos() dans chaque classe qui affiche les infos spécifiques.
+#5. Créer un objet VoitureElectrique et afficher toutes les infos.
+#-----------------------------------------------------------------------------------
 class Vehicule:
     def __init__(self,marque):
         self.marque = marque
