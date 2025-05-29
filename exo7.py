@@ -10,6 +10,7 @@
 #3. Créer une fonction faire_parler(animal) qui prend un objet Animal en paramètre                     |
 #et affiche le résultat de parler().                                                                   |
 #4. Tester cette fonction avec des objets des trois classes.                                           |
+#  From HackerRank                                                                                     |
 #------------------------------------------------------------------------------------------------------|
 
 
