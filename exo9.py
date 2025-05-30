@@ -1,3 +1,16 @@
+#----------------------------------------------------------------------------------------------------
+#✅ Exercice 9                                                                                       | 
+#Objectif : Implémenter une méthode redéfinie pour plusieurs types.                                  |
+#Consignes :                                                                                         |
+#1. Créer une classe Figure avec une méthode aire() retournant 0.                                    |
+#2. Créer deux classes dérivées :                                                                    |
+#• Cercle avec rayon → aire = π × r2                                                                 |
+#• Rectangle avec longueur et largeur → aire = L × l                                                 |
+#3. Créer une liste contenant des objets Cercle et Rectangle.                                        |
+#4. Afficher l’aire de chaque figure avec une boucle.                                                |
+#----------------------------------------------------------------------------------------------------
+
+
 class Figure:
     def aire(self):
         return 0
