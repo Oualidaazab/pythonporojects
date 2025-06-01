@@ -1,3 +1,4 @@
+# this python project to detect error in file 
 f = open('journal.txt','rt')
 error_dict = {}
 i = 0
