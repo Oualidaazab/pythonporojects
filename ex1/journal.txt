@@ -1,0 +1,5 @@
+[INFO] Le système a démarré.
+[WARNING] Espace disque faible.
+[ERROR] Échec de la connexion réseau.
+[INFO] Tâche terminée.
+[ERROR] Fichier introuvable.
