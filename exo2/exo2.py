@@ -1,3 +1,8 @@
+#-------------------------------------------------------------------------------------- 
+# this python project is can generat a password and save in "motdepasse.txt" file 
+#-------------------------------------------------------------------------------------
+
+
 import random
 from string import ascii_lowercase,ascii_uppercase,digits,punctuation
 
