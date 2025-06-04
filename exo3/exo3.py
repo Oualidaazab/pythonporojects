@@ -1,3 +1,6 @@
+#************************************ 
+# Generate password using           |
+#***********************************
 from string import punctuation
 f = open('texte.txt','rt')
 
